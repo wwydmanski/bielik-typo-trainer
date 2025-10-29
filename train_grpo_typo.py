@@ -586,10 +586,6 @@ training_args = GRPOConfig(
     
     # W&B
     report_to="wandb",
-    
-    # GRPO optimization - PRÓBUJEMY PONOWNIE Z KONSERWATYWNYMI USTAWIENIAMI
-    # Z bardzo małym batch_size i num_generations=2, vLLM powinno działać
-    # Jeśli crashuje z shape error, zmień na False
     use_vllm=True,  # 3-5x szybciej! Ale może być buggy...
 )
 
